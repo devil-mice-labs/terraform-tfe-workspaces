@@ -16,6 +16,11 @@ resource "tfe_workspace" "workspace" {
   speculative_enabled           = var.speculative_enabled
   tag_names                     = var.tag_names
 
+  trigger_patterns = [ 
+    "${each.value}/*",
+    "modules/**/*",
+  ]
+
   vcs_repo {
     identifier                 = local.vcs_identifier
     github_app_installation_id = var.github_app_installation_id
