@@ -115,8 +115,8 @@ variable "TFC_WORKSPACE_NAME" {
   default     = null
 }
 
-variable "project_id" {
-  description = "ID of the project where the workspace should be created."
+variable "project_name" {
+  description = "Name of the project where the workspace should be created."
   type        = string
   default     = null
 }
