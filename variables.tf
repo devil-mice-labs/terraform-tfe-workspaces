@@ -1,5 +1,5 @@
-variable "oauth_token_id" {
-  description = "ID of the oAuth token for the VCS connection"
+variable "github_app_installation_id " {
+  description = "The installation ID of the GitHub App"
   type        = string
 }
 
