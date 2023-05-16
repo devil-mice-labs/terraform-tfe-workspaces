@@ -6,6 +6,7 @@ resource "tfe_workspace" "workspace" {
   description                   = "Workspace: ${each.key} | Triggered from path: ${each.value}"
   allow_destroy_plan            = var.allow_destroy_plan
   organization                  = var.organization
+  project_id                    = data.tfe_project.current.id
   terraform_version             = local.tf_version
   working_directory             = each.value
   file_triggers_enabled         = true
