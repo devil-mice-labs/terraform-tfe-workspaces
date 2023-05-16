@@ -54,7 +54,7 @@ module "workspaces" {
   source = "../modules/terraform-tfe-workspaces"
 
   organization   = "scalefactory"
-  oauth_token_id = var.oauth_token_id
+  github_app_installation_id  = var.oauth_token_id
   vcs_org        = "scalefactory"
   vcs_repo       = "terraform-infra"
   #tf_version     = "1.x.y"

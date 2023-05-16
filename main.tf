@@ -18,8 +18,8 @@ resource "tfe_workspace" "workspace" {
 
   vcs_repo {
     # branch         = "main"
-    identifier     = local.vcs_identifier
-    oauth_token_id = var.oauth_token_id
+    identifier                 = local.vcs_identifier
+    github_app_installation_id = var.github_app_installation_id 
   }
 }
 
