@@ -1,6 +1,6 @@
-variable "github_app_installation_id " {
+variable "github_app_installation_id" {
   description = "The installation ID of the GitHub App"
-  type        = string
+  type        = number
 }
 
 variable "organization" {
