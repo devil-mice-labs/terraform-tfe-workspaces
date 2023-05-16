@@ -17,9 +17,8 @@ resource "tfe_workspace" "workspace" {
   tag_names                     = var.tag_names
 
   vcs_repo {
-    # branch         = "main"
     identifier                 = local.vcs_identifier
-    github_app_installation_id = var.github_app_installation_id 
+    github_app_installation_id = var.github_app_installation_id
   }
 }
 
