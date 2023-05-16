@@ -24,7 +24,7 @@ resource "tfe_workspace" "workspace" {
 
   vcs_repo {
     identifier                 = local.vcs_identifier
-    github_app_installation_id = data.tfe_github_app_installation.current.id
+    github_app_installation_id = var.github_app_installation_id
   }
 }
 
