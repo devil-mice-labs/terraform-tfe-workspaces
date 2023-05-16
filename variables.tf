@@ -1,6 +1,6 @@
 variable "github_app_installation_id" {
   description = "The installation ID of the GitHub App"
-  type        = number
+  type        = string
 }
 
 variable "organization" {
